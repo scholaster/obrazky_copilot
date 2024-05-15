@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+ 
+  section {
+    padding: 20px;
+  }
+  
+ 
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+ 
+  .galerie {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .obrazek {
+    flex: 0 0 33.33%;
+    padding: 10px;
+  }
+  
+  .obrazek img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .popisek {
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    header {
+      padding: 10px;
+    }
+    
+    header h1 {
+      font-size: 1.5em;
+    }
+    
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .obrazek {
+      flex: 0 0 100%;
+    }
+  }
+  
