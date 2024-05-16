@@ -11,9 +11,9 @@
     line-height: 1.6;
     background-color: #f8f8f8;
     color: #333;
-    display: grid; /* Přidáno */
-    grid-template-rows: auto 1fr auto; /* Přidáno */
-    min-height: 100vh; /* Přidáno */
+    display: grid; 
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
   }
   
   
@@ -21,7 +21,7 @@
     background-color: #333;
     color: #fff;
     padding: 20px;
-    grid-row: 1; /* Přidáno */
+    grid-row: 1; 
   }
   
   header h1 {
@@ -30,7 +30,7 @@
   
   nav ul {
     list-style-type: none;
-    display: flex; /* Přidáno */
+    display: flex; 
   }
   
   nav ul li {
@@ -44,11 +44,11 @@
   }
   
   main {
-    display: grid; /* Přidáno */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Přidáno */
-    grid-gap: 20px; /* Přidáno */
-    padding: 20px; /* Přidáno */
-    grid-row: 2; /* Přidáno */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 20px; 
+    padding: 20px; 
+    grid-row: 2;
   }
  
   section {
@@ -63,8 +63,10 @@
   
  
   .galerie {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto; 
+    grid-gap: 20px;
   }
   
   .obrazek {
@@ -112,7 +114,8 @@
     text-align: center;
     margin-top: 5px;
     font-style: italic;
-    color: #666;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
 
@@ -135,3 +138,5 @@
     }
   }
   
+
+ 
